@@ -52,12 +52,8 @@ body {
   flex-shrink: 0;
 }
 
-.relative-container {
-  position: relative;
+.button-left {
+  margin-left: -10px;  /* Adjust as needed */
 }
 
-.bottom-rig {
-  position: absolute;
-  bottom: 10px; /* Ajusta el valor según sea necesario */
-  left: 10px; /* Ajusta el valor según sea necesario */
-}
+
