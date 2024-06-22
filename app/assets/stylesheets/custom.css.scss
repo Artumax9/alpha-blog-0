@@ -1,0 +1,53 @@
+.navbar {
+    background-color: black !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#home-container {
+    margin-top: 25px;
+}
+
+.custom-jumbotron {
+    background-image: asset-url('jumbotron.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    border-radius: .3rem;
+    margin: 3rem;
+    height: 350px;
+  }
+
+  /* Sticky Footer Classes */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background: lightgrey;
+}
+
+#sticky-footer {
+  flex-shrink: 0;
+}
