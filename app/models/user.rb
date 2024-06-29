@@ -1,6 +1,7 @@
 # User represents the model for users in the system.
 # It contains validations for username and email fields.
 class User < ApplicationRecord
+  before_save { self.email = email.downcase }
   has_many :articles
   # Username validations
   validates :username, presence: true,
