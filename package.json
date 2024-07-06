@@ -1,5 +1,13 @@
 {
   "devDependencies": {
     "prettier": "^3.3.2"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "semi": false
   }
 }

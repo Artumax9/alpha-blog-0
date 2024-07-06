@@ -1,22 +1,28 @@
 ---
 include:
-- "**/*.rb"
+  - '**/*.rb'  # Incluye todos los archivos Ruby en el proyecto
+
 exclude:
-- spec/**/*
-- test/**/*
-- vendor/**/*
-- ".bundle/**/*"
-require: []
-domains: []
+  - spec/**/*   # Excluye los archivos dentro de la carpeta spec
+  - test/**/*   # Excluye los archivos dentro de la carpeta test
+  - vendor/**/* # Excluye los archivos dentro de la carpeta vendor
+  - '.bundle/**/*' # Excluye los archivos dentro de la carpeta .bundle
+
+require: []      # Lista de archivos que se requieren antes de ejecutar RuboCop
+domains: []      # Dominios de los archivos a procesar (vacío significa todos)
 reporters:
-- rubocop
-- require_not_found
+  - rubocop       # Reporta los resultados usando RuboCop
+  - require_not_found  # Reporta los errores de archivos requeridos no encontrados
 formatter:
   rubocop:
-    cops: safe
-    except: []
-    only: []
-    extra_args: []
-require_paths: []
-plugins: []
-max_files: 5000
+    cops: safe    # Nivel de severidad de los problemas de RuboCop (seguro)
+    except: []    # Exceptúa ciertos problemas específicos de RuboCop
+    only: []      # Limita la revisión solo a ciertos problemas de RuboCop
+    extra_args: [] # Argumentos extra para RuboCop
+require_paths: [] # Rutas de carga adicionales para los archivos requeridos
+plugins: []       # Lista de plugins adicionales de RuboCop
+max_files: 5000   # Límite máximo de archivos a procesar
+
+formatting:
+  single_quotes: true   # Forzar el uso de comillas simples en el formateo
+  trailing_comma: true  # Habilitar la coma final en estructuras de datos (arrays y hashes)

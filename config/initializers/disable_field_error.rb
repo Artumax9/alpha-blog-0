@@ -1,3 +1,3 @@
-Rails.application.config.action_view.field_error_proc = Proc.new { |html_tag, instance|
+Rails.application.config.action_view.field_error_proc = proc do |html_tag, _instance|
   html_tag.html_safe
-}
+end

@@ -20,7 +20,7 @@
 }
 
 .custom-jumbotron {
-  background-image: asset-url("jumbotron.jpg");
+  background-image: asset-url('jumbotron.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +53,5 @@ body {
 }
 
 .button-left {
-  margin-left: -10px;  /* Adjust as needed */
+  margin-left: -10px; /* Adjust as needed */
 }
-
-
