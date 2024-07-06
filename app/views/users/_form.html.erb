@@ -29,7 +29,8 @@
           <div class="row d-flex align-items-end">
             <div class="col-sm-10"></div>
             <div class="col-auto">
-              <%= f.submit "Signup" , class:"btn btn-success button-left shadow rounded" %>
+              <%= f.submit(@user.new_record? ? "Signup" : "Update account" , class:"btn btn-success button-left shadow
+                rounded") %>
             </div>
           </div>
 
